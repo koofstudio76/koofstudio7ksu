@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CodePen - GSAP Morph SVG
+        </title>
+
+        <link rel="stylesheet" href="css/adaptiv.css">
+        <link rel="stylesheet" href="./css/menu.css">
+        <link rel="stylesheet" href="main.css">
+
+        <link rel="stylesheet" href="./css/style.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300&display=swap"
+            rel="stylesheet"><link rel="stylesheet" href="./style.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'></script>
+    
+    </head>
+    <body>
+        
+  <header> 
+    <div class="layout">
+      <a href="#" class="menu">
+          <svg id="menu-svg" width="96" height="96" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.9993 16.3333H25.666C26.2849 16.3333 26.8783 16.5792 27.3159 17.0168C27.7535 17.4543 27.9994 18.0478 27.9994 18.6667C27.9994 19.2855 27.7535 19.879 27.3159 20.3166C26.8783 20.7542 26.2849 21 25.666 21H13.9993C13.3805 21 12.787 20.7542 12.3494 20.3166C11.9118 19.879 11.666 19.2855 11.666 18.6667C11.666 18.0478 11.9118 17.4543 12.3494 17.0168C12.787 16.5792 13.3805 16.3333 13.9993 16.3333ZM30.3327 35H41.9994C42.6182 35 43.2117 35.2458 43.6493 35.6834C44.0869 36.121 44.3327 36.7145 44.3327 37.3333C44.3327 37.9522 44.0869 38.5457 43.6493 38.9833C43.2117 39.4208 42.6182 39.6667 41.9994 39.6667H30.3327C29.7138 39.6667 29.1204 39.4208 28.6828 38.9833C28.2452 38.5457 27.9994 37.9522 27.9994 37.3333C27.9994 36.7145 28.2452 36.121 28.6828 35.6834C29.1204 35.2458 29.7138 35 30.3327 35ZM13.9993 25.6667H41.9994C42.6182 25.6667 43.2117 25.9125 43.6493 26.3501C44.0869 26.7877 44.3327 27.3812 44.3327 28C44.3327 28.6188 44.0869 29.2123 43.6493 29.6499C43.2117 30.0875 42.6182 30.3333 41.9994 30.3333H13.9993C13.3805 30.3333 12.787 30.0875 12.3494 29.6499C11.9118 29.2123 11.666 28.6188 11.666 28C11.666 27.3812 11.9118 26.7877 12.3494 26.3501C12.787 25.9125 13.3805 25.6667 13.9993 25.6667Z" fill="black"/>
+          </svg>   
+      </a>
+  </div>
+   <div class="nav1">
+     <ul>
+      <li class="m-item"><a href="index.html">ГЛАВНАЯ</a></li>
+      <li class="m-item"><a href="about.html">О НАС</a></li>
+      <li class="m-item"><a href="news.html">НОВОСТИ</a></li>
+      <li class="m-item"><a href="gallery.html">ФОТО</a></li>
+      <li class="m-item"><a href="video.html">ВИДЕО</a></li>
+
+      <li class="m-item"><a href="contacts.html">КОНТАКТЫ</a></li>
+  </ul>
+</div>
+    
+
+<div class="doorses">
+
+      
+  <div id="d_left" class="bgnavblue">
+ 
+    
+        
+    </div>
+    
+     <div id="d_right" class="bgnavblue">
+     
+
+
+    </div>
+
+    
+</div>
+
+</header>
+        <section id="block-title">
+            <img id="img" src="img/6.JPG" alt="">
+            <svg
+                id="block-svg_img"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewbox="0 0 1400 560">
+                <defs>
+                    <filter id="displacementFilter1">
+                        <feturbulence
+                            type="fractalNoise"
+                            basefrequency="0.1"
+                            numoctaves="1"
+                            result="noise"/>
+                        <fedisplacementmap
+                            in="SourceGraphic"
+                            in2="noise"
+                            result="displacement"
+                            scale="100"
+                            xchannelselector="R"
+                            ychannelselector="G"/>
+                        <femorphology operator="dilate" radius="2" result="morph" in="displacement"/>
+                    </filter>
+                    <mask id="circleMask4">
+                        <circle
+                            cx="50%"
+                            cy="50%"
+                            r="0"
+                            data-value-final="950"
+                            fill="white"
+                            class="mask"
+                            style="filter: url(#displacementFilter1);"/>
+                    </mask>
+                </defs>
+            </svg>
+            <div class="block-title_text">
+                <h1>Kseniya MUSLANOVA</h1>
+                <h4>official site</h4>
+            </div>
+
+        </section>
+        <section id="block-about">
+            <div class="block">
+
+                <div class="block-text ">
+                    <h3 class="t2">BIOGRAPHY</h2>
+                    <h4>
+                        Born in the Russia, Ksenia studied at Schnittke State Institute of Music in
+                        Moscow then at the Galina Vishnevskaya Opera Centre for two years before
+                        returning to the Schnittke Institute for a post graduate degree where she has
+                        also worked as a voice teacher. She has received numerous prizes in competition
+                        including the 2016 winner of the Elizabeth Connell Prize, prize winner of the IV
+                    </h4>
+                    <a href="about.html">
+                        <svg
+                            id="block-svg_line"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewbox="0 0 288 138.5"
+                            xml:space="preserve">
+                            <polyline class="st0-" points="0,0 0,0 0,0 "/>
+                            <path class="st0 t1" d="M174.3,113.2"/>
+                            <path
+                                class="st1"
+                                d="M206,44.5c2.2,1.4,14.2,9.4,15.4,23c1.2,13.3-8.9,22.3-10.9,24c2.2-3.8,7-10.8,16.8-16.7
+                                                                                   c14.5-8.7,30.3-9.5,35.7-9.6c-6.3,0.2-21,0.1-36.2-6.5C216,54.1,209.4,48.1,206,44.5z"/>
+                            <text transform="matrix(1 0 0 1 110.2933 64.3326)" class="st2 st3">more</text>
+                            <line class="st4" x1="217.7" y1="68.5" x2="96.3" y2="72.5"/>
+                            <line class="st5" x1="217.7" y1="68.5" x2="96.3" y2="72.5"/>
+                            <line class="st6" x1="221.3" y1="67.5" x2="106.8" y2="69.3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="block">
+                <img id="img1" src="img/2.JPG" alt="">
+                <svg
+                    id="block-svg_img1" width="1000" height="560" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 560">
+                        <defs>
+                            <filter id="displacementFilter4">
+                                <feTurbulence type="fractalNoise" baseFrequency="0.5" numOctaves="1" result="noise" />
+                                <feDisplacementMap in="SourceGraphic" in2="noise" scale="50" xChannelSelector="R" yChannelSelector="G" />
+                              </filter>
+                              <mask id="circleMask2">
+                                <circle cx="25%" cy="50%" r="0" data-value-final="770" fill="white" class="box1" style="filter: url(#displacementFilter4);" />
+                             
+                            </mask>
+                        </defs>
+                      </svg>
+                      
+            </div>
+
+        </section>
+
+
+
+        <section id="block-video"  style="background: url(img/video-image.jpg) no-repeat;">
+          <div class="video-section jarallax d-flex align-items-center justify-content-center">
+               <div class="video-player text-center">
+                 <a type="button"  class="play-btn position-relative  js-button-campaign">
+                   <svg class="position-absolute top-0 bottom-0 start-0 end-0 m-auto" width="41" height="41">
+                     <use xlink:href="#play">
+       
+                           </svg>
+                   <img src="img/text-pattern.png" alt="pattern" class="text-pattern">
+                 </a>
+               </div>
+             </div></div>
+        
+            <div class="overlay js-overlay-campaign">
+                <div class="popup js-popup-campaign">
+       
+                    <video src="./999.mp4" class="showcase__video" style="width: 900px;" controls loop muted></video>
+                    <div class="close-popup js-close-campaign"></div>
+                </div>
+            </div>
+            
+       
+           </section>
+        <section id="block-event">
+            <div class="block-text">
+                <h4>Stanislavski and Nemirovich-Danchenko Moscow Academic Music Theatre</h6>
+                <h3>Dargomyzhsky</h3>
+                <h3>The Mermaid</h2>
+
+                <h4>26.06.2024|19:00</h4>
+                <hr>
+            </div>
+            <div class="block">
+                <img id="img2" src="img/3.JPG" alt="">
+
+                <svg
+                    0="0"
+                    1400="1400"
+                    id="block-svg_img2"
+                    "  version="
+                    1.1" xmlns="
+                    http://www.w3.org/2000/svg" xmlns:xlink="
+                    http://www.w3.org/1999/xlink" viewBox="0 0 1000 560">
+                    <defs>
+                    <defs>
+                        <filter id="displacementFilter3">
+                            <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" />
+                            <feDisplacementMap in="SourceGraphic" in2="noise" scale="80" result="displacement" xChannelSelector="R" yChannelSelector="G" />
+                          </filter>
+                        <mask id="circleMask3">
+
+                            <circle
+                                cx="50%"
+                                cy="100%"
+                                r="0"
+                                data-value-final="950"
+                                fill="white"
+                                class="box2"
+                                style="filter: url(#displacementFilter3);"/>
+                        </mask>
+                    </defs>
+                </svg>
+
+            </div>
+            <div class="block-text">
+
+                <h4>Stanislavski and Nemirovich-Danchenko Moscow Academic Music Theatre</h6>
+                <h3>Dargomyzhsky</h3>
+                <h3>The Mermaid</h2>
+
+                <h4>27.06.2024|19:00</h4>
+                <hr>
+            </div>
+
+        </section>
+  <footer></footer>
+  
+  
+   <script src="js/menu.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="main.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="main.js"></script>
+        <script src="js/gsap.js"></script>
+        <script src="js/ScrollTrigger.js"></script>
+        <script src="js/script.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>

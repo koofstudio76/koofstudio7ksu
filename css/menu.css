@@ -1,0 +1,132 @@
+
+
+
+@font-face {
+   font-family: "KudryashevDisplay";
+   src: url(../fonts/KudryashevDisplay.ttf);
+   font-weight: bold;
+   font-style: normal;
+ }
+ @font-face {
+   font-family: "  kudry_weird-headline";
+   src: url(../fonts/kudry_weird-headline.otf);
+   font-weight: bold;
+   font-style: normal;
+ }
+
+ .layout{position: absolute;top: 0;
+            width:100%;
+           left: 85%; 
+            top: -25vw;
+          height: 100%;}
+
+
+
+header{position: absolute;z-index: 9999999999999999999999999999999999999999;}
+
+
+
+.nav1 ul li a{z-index: 999999999999;
+           font-size: 4vw;
+
+       }
+
+       .nav1{position:absolute ;
+        text-decoration: none;
+        z-index: 999999999;
+        width: 100vw;
+        height: 100%;
+     color: darkcyan;
+        font-family: " kudry_weird-headline";
+text-align: center;
+        top: -800px;
+left:0vw;        
+        }
+        .nav1 ul li{list-style: none;}
+        .nav1 ul li a{z-index: 999999999999;
+                   font-size: clamp(5vw, 6vw, 8vh);
+                   list-style: none;
+                   text-decoration: none;
+                   color: wheat;
+
+               }
+#d_left{
+
+          height: 100vh;
+          width: 50%;
+          position:fixed;
+          top: 0;
+          left:-50%;
+     background: url(../img/d_lefT.png) no-repeat right top;
+  background-size:contain;  z-index:199999;
+opacity: 0.9;       
+}
+        #clip{position: fixed;left: 0%;top:0%;}
+        
+        #d_right{
+        
+          height: 100%;
+          width:50vw;
+          position: fixed;
+  background: url(../img/D-RIGHT.png) no-repeat right top;
+  background-size: contain;
+  opacity: 0.9;       
+  top:0vh;
+          right:  -50%;
+         z-index:99;
+        }
+                    
+
+
+          #clip2{position:fixed;
+          right: -0%;
+          top: -0%;
+          width: 50%;
+          height: 100%;
+        }
+        h1 {
+          font-weight: 300;
+          font-size: clamp(2rem, 5vw, 4rem);
+          width: 50%;
+          margin: 0;
+        }
+        
+        .menu {
+          position: fixed;
+          right: 5%;
+          z-index: 95510;
+          padding: 25% clamp(2rem, 8vw, 7rem) 0;
+        }
+        .menu:before {
+          position: absolute;
+          content: "";
+          width: 5vw;
+          height: 5vw;
+          stroke: 1px white;
+          border-radius: 50%;
+          background: rgb(236, 231, 200);
+          z-index: -1;
+          transform: scale(0);
+          transition: transform 0.5s ease;
+        }
+        .menu:hover:before {
+          transform: scale(1);
+        }
+            
+        .doorses{position: absolute;}
+
+
+        @media (max-width:768px) {
+
+          #d_left{height: 145vh;
+            background: url(../img/left-mob.png) no-repeat right top;
+  background-size: cover;
+          
+          }
+          #d_right{height: 145vh;
+            background: url(../img/right-mob.png) no-repeat left top;
+  background-size: cover;
+          
+          }
+          
+        }

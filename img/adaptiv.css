@@ -1,0 +1,79 @@
+
+@media(max-width:786px){ 
+           
+
+
+
+  s                div{height: auto;
+                           margin: 0; } 
+
+                  .red h3{font-size: 9vw} 
+
+                  #for{position: relative;
+                   display: grid;
+                   grid-template-columns: 12fr;
+                       height: 300vh}
+          #for .block{width: 100vw;height: 100%;display: grid;position: relative;}
+        ..block-about{position: relative;
+                      width: 100%;
+                      height: 140vh;
+                      z-index: 1;
+                    grid-template-columns:100%;
+                    grid-template-rows: auto;
+                   } 
+                   .red{ height: 100vh;z-index: 9;}
+                   .img img{width: 100%;margin-top: -60vh;}                         
+             .img img{width: 111%;margin-top: -0vh;}
+            #two .green{display: none;}                         
+           
+
+              .title-up h3{font-size: 8vw;
+            position: absolute;
+          width: 100%;
+          font-family: "  kudry_weird-headline";
+            top: 235px;}     
+               /* TEXT */
+             .text-block{width: 80%;
+                      height:auto;
+                      z-index: 999;
+                        text-align: center;
+                           margin:0 auto;
+                            padding: 20px;}
+           
+              .text-block h3{font-size:39px;
+                              text-align: center;
+                              line-height: vw;margin: 0;
+
+                              font-weight: 900;}
+.mt1{height: 132vh;}
+                              .text-block h4{font-size: 29px;
+                                line-height: 41px;
+                                text-align: center;
+                                font-weight: 900;}
+
+                                .text-block h5{font-size: 59px;
+                                  text-align: center;
+                                  font-weight: 900;}
+  
+                
+              
+              
+                              .title-up{position: relative;
+                                grid-area: "text";
+                                z-index:-0;
+                                top: -234px;
+                                    width: 100%;
+                                    height:10px;}
+               
+                                        .title-up h1{font-size: 24vw;
+                                         top: 120px;
+                                       -webkit-text-stroke: 2px goldenrod;
+                                      color: rgba(30, 145, 245, 0);
+                                      text-align: center;
+                                      z-index: 8;}
+               
+            .title-up h3{font-size: 12vw;
+                           position:relative;
+                         width: 100%;
+                         margin:14vh  auto 0;       }
+                  }
