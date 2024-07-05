@@ -1,0 +1,416 @@
+
+
+
+@font-face {
+   font-family: "KudryashevDisplay";
+   src: url(../fonts/KudryashevDisplay.ttf);
+   font-weight: bold;
+   font-style: normal;
+ }
+ @font-face {
+   font-family: "  kudry_weird-headline";
+   src: url(../fonts/kudry_weird-headline.otf);
+   font-weight: bold;
+   font-style: normal;
+ }
+
+ .layout{position: absolute;top: 0;
+            width:100%;
+           left: 85%; 
+            top: -25vw;
+          height: 100%;}
+
+
+
+header{position: absolute;z-index: 9999999999999999999999999999999999999999;}
+
+
+
+.nav1 ul li a{z-index: 999999999999;
+           font-size: 4vw;
+
+       }
+
+       .nav1{position:absolute ;
+        text-decoration: none;
+        z-index: 999999999;
+        width: 100vw;
+        list-style: 2vh;
+        height: 100%;
+     color: darkcyan;
+        font-family: " kudry_weird-headline";
+text-align: center;
+        top: -880px;
+left:0vw;        
+        }
+        .nav1 ul li a{z-index: 999999999999;
+                   font-size: clamp(5vw, 6vw, 8vh);
+                   list-style: 2vh;
+                   text-decoration: none;
+                   color: wheat;
+
+               }
+#d_left{
+
+          height: 100vh;
+          width: 50%;
+          position:fixed;
+          top: 0;
+          left:-50%;
+     background: url(../img/d_lefT.png) no-repeat right top;
+  background-size:contain;  z-index:199999;
+opacity: 0.9;       
+}
+        #clip{position: fixed;left: 0%;top:0%;}
+        
+        #d_right{
+        
+          height: 100%;
+          width:50vw;
+          position: fixed;
+  background: url(../img/D-RIGHT.png) no-repeat right top;
+  background-size: contain;
+  opacity: 0.9;       
+  top:0vh;
+          right:  -50%;
+         z-index:99;
+        }
+                    
+
+
+          #clip2{position:fixed;
+          right: -0%;
+          top: -0%;
+          width: 50%;
+          height: 100%;
+        }
+        h1 {
+          font-weight: 300;
+          font-size: clamp(2rem, 5vw, 4rem);
+          width: 50%;
+          margin: 0;
+        }
+        
+        .menu {
+          position: fixed;
+          right: 5%;
+          z-index: 95510;
+          padding: 25% clamp(2rem, 8vw, 7rem) 0;
+        }
+        .menu:before {
+          position: absolute;
+          content: "";
+          width: 5vw;
+          height: 5vw;
+          stroke: 1px white;
+          border-radius: 50%;
+          background: rgb(236, 231, 200);
+          z-index: -1;
+          transform: scale(0);
+          transition: transform 0.5s ease;
+        }
+        .menu:hover:before {
+          transform: scale(1);
+        }
+            
+        .doorses{position: absolute;}
+
+
+        @media (max-width:768px) {
+
+          #d_left{height: 145vh;
+            background: url(../img/left-mob.png) no-repeat right top;
+  background-size: cover;
+          
+          }
+          #d_right{height: 145vh;
+            background: url(../img/right-mob.png) no-repeat left top;
+  background-size: cover;
+          
+          }
+          
+        }
+
+        
+/* 3.3 Product
+/*----------------------------------------------*/
+.product-store .product-card .cart-concern {
+  bottom: 120px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+  opacity: 0;
+}
+.product-store .product-card:hover .cart-concern {
+  opacity: 1;
+}
+.product-card .cart-concern svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--light-color);
+  margin-left: 9px;
+}
+
+/* 3.4 Video
+/*----------------------------------------------*/
+#block-video{position: relative;
+width: 100vw;height: 65vh;
+}
+/* overide */
+.modal-dialog {
+  max-width: 800px;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.modal-content {
+  padding: 0;
+  background-color: #f5f3ef;
+  border: none;
+  border-radius: 0
+}
+.text-pattern {
+  animation: rotation 50s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* 3.7 Footer
+/*----------------------------------------------*/
+/*------------ Social Icon -----------*/
+.social-links svg {
+  width: 20px;
+  height: 20px;
+  color: var(--gray-color-500);
+  transition: 0.3s ease;
+}
+.social-links svg:hover {
+  color: var(--primary-color);
+}
+.social-links li {
+  padding-right: 30px;
+}
+
+/* 4. PAGES
+/*----------------------------------------------*/
+
+/* 4.1 About Us Page
+/*----------------------------------------------*/
+#about .about-content{
+  position: absolute;
+  min-width: 50%;
+  min-height: fit-content;
+  max-height: fit-content;
+  padding: 60px;
+  background-color: var(--gray-color-300);  
+}
+#about.aos-init.aos-animate img.single-image{
+  animation: parallax 0.8s ease-in-out forwards;
+}
+@keyframes parallax {
+  from {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #about .about-content{
+    min-width: 70%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  #about .about-content{
+    position: unset;
+    padding: 40px;
+  }
+}
+
+/* Newsletter */
+#newsletter .form-control{
+  font-size: inherit;
+}
+#newsletter form input{
+  background: none;
+}
+#newsletter form input:focus{
+  box-shadow: none;
+}
+
+/* 4.2 Shop Page
+--------------------------------------------------------------*/
+/* ----------- SideBar -----------*/
+.sidebar input.search-field {
+  background: none;
+  border: none;
+  outline: none;
+  outline-offset: 0;
+}
+h5.widget-title {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 991px) {
+  .widget-search-bar form {
+    flex-wrap: wrap;
+  }
+}
+
+/* ----------- Pagination -----------*/
+.paging-navigation .pagination .page-numbers {
+  color: var(--gray-color-500);
+}
+.paging-navigation .pagination .page-numbers:hover,
+.paging-navigation .pagination .page-numbers.current {
+  color: var(--primary-color);
+}
+
+/* 4.3 Single Product Page
+/*----------------------------------------------*/
+/*---- Single Product Image ----------*/
+.single-product .large-swiper{
+  padding-left: 0;
+}
+.product-preview .swiper-slide {
+  height: fit-content;
+  padding-bottom: 10px;
+  transition: cubic-bezier(0.22, 0.78, 0.71, 1.01);
+}
+.swiper-slide-thumb-active img{
+  border: 1px solid var(--accent-color);
+}
+
+/*---- Single Product Information ----------*/
+.product-info del{
+  color: var(--gray-color-500);
+}
+.product-info hr{
+  color: var(--gray-color-500);
+}
+.rating-container .rating {
+  display: flex;
+  padding-right: 4px;
+  color: var(--black-color);
+}
+.product-info .product-price strong {
+  font-size: 1.6em;
+  padding-right: 10px;
+}
+.product-info .select-item{
+  margin-right: 8px;
+}
+.input-group{
+  padding: 6px;
+  background-color: var(--gray-color-400);
+}
+.input-group button{
+  border: none;
+}
+
+/*---- Product Tabs ----------*/
+.nav-tabs {
+  border-bottom: 1px solid var(--black-color);
+}
+.nav-tabs .nav-link {
+  color: var(--black-color);
+  font-weight: 600;
+}
+.nav-tabs .nav-link:focus{
+  box-shadow: none;
+}
+.nav-tabs .nav-link {
+  background: none;
+  border: none;
+}
+.nav-tabs button.nav-link.active {
+  color: var(--primary-color);
+  background: none;
+}
+.nav-tabs button.nav-link:hover {
+  color: var(--primary-color);
+}
+.tabs-listing .tab-content {
+  border-bottom: 1px solid var(--black-color);
+  padding: 40px 0;
+}
+.product-tabs .review-item{
+  width: 50%;
+  margin-bottom: 20px;
+}
+.product-tabs .review-item .image-holder{
+  margin-right: 10px;
+}
+@media screen and (max-width: 991px) {
+  .product-tabs .review-item{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .product-tabs .review-item .image-holder{
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .cart-header{
+    display: none;
+  }
+}
+
+/* 4.4 Cart Page
+-----------------------------------------------------*/
+.shopify-cart .table th {
+    width: 36%;
+}
+.table>:not(caption)>*>*{
+  padding: 1.5rem;
+}
+.shopify-cart .cart-product-detail{
+  max-width: 250px;
+}
+@media screen and (max-width: 775px) {
+  .shopify-cart .table thead{
+    display: none;
+  }
+  .shopify-cart .table tbody{
+    border: none;
+  }
+  .shopify-cart .table tbody td{
+    display: block;
+  }
+  .table>:not(caption)>*>*{
+    padding: 1rem;
+  }
+}
+
+/* 4.5 Blog Page
+--------------------------------------------------------------*/
+/*------------ Sidebar -----------*/
+.widget.sidebar-recent-post .card-image{
+  max-width: 120px;
+}
+.sidebar-post-item h4.card-title {
+  font-size: 1.2em;
+}
+
+/* 4.6 Single Post Page
+--------------------------------------------------------------*/
+#single-post-navigation .post-navigation span.page-nav-title {
+  font-size: 1.5em;
+}
+.post-navigation svg {
+  width: 30px;
+  height: 45px;
+}
+.post-navigation:hover svg,
+.post-navigation:focus svg {
+  fill: var(--primary-color);
+}
