@@ -9,21 +9,12 @@
         <link rel="stylesheet" href="./css/menu.css">
         <link rel="stylesheet" href="main.css">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Демо Bootstrap</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-     <link rel="stylesheet" type="text/css" href="css/vendor.css">
-      <link rel="stylesheet" type="text/css" href="style.css">
-    
         <link rel="stylesheet" href="./css/style.css">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300&display=swap"
-            rel="stylesheet"><link rel="stylesheet" href="./style.css">
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'></script>
-    
+     <script src="js/gsap.js"></script>
+     <script src="js/ScrollTrigger.js"></script>
+  
     </head>
     <body>
         
@@ -37,15 +28,13 @@
   </div>
    <div class="nav1">
      <ul>
-      <li class="m-item"><a href="index.html">
+      <li class="m-item"><a href="index.html">ГЛАВНАЯ</a></li>
+      <li class="m-item"><a href="about.html">О НАС</a></li>
+      <li class="m-item"><a href="news.html">НОВОСТИ</a></li>
+      <li class="m-item"><a href="gallery.html">ФОТО</a></li>
+      <li class="m-item"><a href="video.html">ВИДЕО</a></li>
 
-      </a></li>
-      <li class="m-item"><a href="index.html">HOME</a></li>
-      <li class="m-item"><a href="about.html">ABOUT ME</a></li>
-      <li class="m-item"><a href="gallery.html">GALLERY</a></li>
-      <li class="m-item"><a href="video.html">VIDEO</a></li>
-
-      <li class="m-item"><a href="contacts.html">CONTACTS</a></li>
+      <li class="m-item"><a href="contacts.html">КОНТАКТЫ</a></li>
   </ul>
 </div>
     
@@ -112,47 +101,39 @@
 
         </section>
         <section id="block-about">
+            <div class="block">
 
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <div class="block">
-
-                            <div class="block-text ">
-                                <h3 class="t2">BIOGRAPHY</h2>
-                                <h4>
-                                    Born in the Russia, Ksenia studied at Schnittke State Institute of Music in
-                                    Moscow then at the Galina Vishnevskaya Opera Centre for two years before
-                                    returning to the Schnittke Institute for a post graduate degree where she has
-                                    also worked as a voice teacher. She has received numerous prizes in competition
-                                    including the 2016 winner of the Elizabeth Connell Prize, prize winner of the IV
-                                </h4>
-                                <a href="about.html">
-                                    <svg
-                                        id="block-svg_line"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        x="0px"
-                                        y="0px"
-                                        viewbox="0 0 288 138.5"
-                                        xml:space="preserve">
-                                        <polyline class="st0-" points="0,0 0,0 0,0 "/>
-                                        <path class="st0 t1" d="M174.3,113.2"/>
-                                        <path
-                                            class="st1"
-                                            d="M206,44.5c2.2,1.4,14.2,9.4,15.4,23c1.2,13.3-8.9,22.3-10.9,24c2.2-3.8,7-10.8,16.8-16.7
-                                                                                               c14.5-8.7,30.3-9.5,35.7-9.6c-6.3,0.2-21,0.1-36.2-6.5C216,54.1,209.4,48.1,206,44.5z"/>
-                                        <text transform="matrix(1 0 0 1 110.2933 64.3326)" class="st2 st3">more</text>
-                                        <line class="st4" x1="217.7" y1="68.5" x2="96.3" y2="72.5"/>
-                                        <line class="st5" x1="217.7" y1="68.5" x2="96.3" y2="72.5"/>
-                                        <line class="st6" x1="221.3" y1="67.5" x2="106.8" y2="69.3"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        
+                <div class="block-text ">
+                    <h3 class="t2">BIOGRAPHY</h2>
+                    <h4>
+                        Born in the Russia, Ksenia studied at Schnittke State Institute of Music in
+                        Moscow then at the Galina Vishnevskaya Opera Centre for two years before
+                        returning to the Schnittke Institute for a post graduate degree where she has
+                        also worked as a voice teacher. She has received numerous prizes in competition
+                        including the 2016 winner of the Elizabeth Connell Prize, prize winner of the IV
+                    </h4>
+                    <a href="about.html">
+                        <svg
+                            id="block-svg_line"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewbox="0 0 288 138.5"
+                            xml:space="preserve">
+                            <polyline class="st0-" points="0,0 0,0 0,0 "/>
+                            <path class="st0 t1" d="M174.3,113.2"/>
+                            <path
+                                class="st1"
+                                d="M206,44.5c2.2,1.4,14.2,9.4,15.4,23c1.2,13.3-8.9,22.3-10.9,24c2.2-3.8,7-10.8,16.8-16.7
+                                                                                   c14.5-8.7,30.3-9.5,35.7-9.6c-6.3,0.2-21,0.1-36.2-6.5C216,54.1,209.4,48.1,206,44.5z"/>
+                            <text transform="matrix(1 0 0 1 110.2933 64.3326)" class="st2 st3">more</text>
+                            <line class="st4" x1="217.7" y1="68.5" x2="96.3" y2="72.5"/>
+                            <line class="st5" x1="217.7" y1="68.5" x2="96.3" y2="72.5"/>
+                            <line class="st6" x1="221.3" y1="67.5" x2="106.8" y2="69.3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
             <div class="block">
                 <img id="img1" src="img/2.JPG" alt="">
                 <svg
@@ -170,10 +151,6 @@
                       </svg>
                       
             </div>
-                    </div>
-                </div>
-            </div>
-          
 
         </section>
 
@@ -203,12 +180,7 @@
        
            </section>
         <section id="block-event">
-          
-            <div class="containerifluid">
-                <div class="row">
-                    <div class="col-md-4 col-sm-12 mt-5">
-                
-            <div class="block-text text-center">
+            <div class="block-text">
                 <h4>Stanislavski and Nemirovich-Danchenko Moscow Academic Music Theatre</h6>
                 <h3>Dargomyzhsky</h3>
                 <h3>The Mermaid</h2>
@@ -216,9 +188,6 @@
                 <h4>26.06.2024|19:00</h4>
                 <hr>
             </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-
             <div class="block">
                 <img id="img2" src="img/3.JPG" alt="">
 
@@ -251,9 +220,6 @@
                 </svg>
 
             </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-
             <div class="block-text">
 
                 <h4>Stanislavski and Nemirovich-Danchenko Moscow Academic Music Theatre</h6>
@@ -263,111 +229,14 @@
                 <h4>27.06.2024|19:00</h4>
                 <hr>
             </div>
-</div>
+
         </section>
- 
-        <footer id="footer" class="overflow-hidden my-lg-9">
-            <div class="container-lg">
-              <div class="row justify-content-center">
-                <div class="col-md-5">
-                  <div class="image-holder  mb-4">
-                    <img src="images/footer-logo.png" alt="logo" class="img-fluid">
-                  </div>
-        
-                  <div>
-                    <p>email@yourcompany.com </p>
-                    <p>15Th Street Avenue, New York, USA </p>
-                    <p>011-554-8798-6556</p>
-                  </div>
-        
-                  <ul class="social-links list-unstyled d-flex mt-4">
-                    <li class="border border-primary rounded-circle p-3 me-4">
-                      <a href="#" class="svg-primary">
-                        <svg class="facebook" width="25" height="25">
-                          <use xlink:href="#facebook"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="border border-primary rounded-circle p-3 me-4">
-                      <a href="#" class="svg-primary">
-                        <svg class="twitter" width="25" height="25">
-                          <use xlink:href="#twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="border border-primary rounded-circle p-3 me-4">
-                      <a href="#" class="svg-primary">
-                        <svg class="instagram" width="25" height="25">
-                          <use xlink:href="#instagram"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="border border-primary rounded-circle p-3 me-4">
-                      <a href="#" class="svg-primary">
-                        <svg class="linkedin" width="25" height="25">
-                          <use xlink:href="#linkedin"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="border border-primary rounded-circle p-3 me-4">
-                      <a href="#" class="svg-primary">
-                        <svg class="youtube" width="25" height="25">
-                          <use xlink:href="#youtube"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-        
-                </div>
-                <div class="offset-md-2 col-md-5 mt-5 mt-lg-0">
-                  <div class="subscribe-content">
-                    <div class="subscribe-header ">
-                      <h2 class="display-3">Subscribe to get our daily updates</h2>
-                    </div>
-                    <form id="form" class="py-3 position-relative">
-                      <input type="text" name="email" placeholder="Write your email address here..."
-                        class="w-100 bg-transparent border-0 border-bottom pb-3 ">
-                      <a href="#" class="position-absolute end-0">
-                        <svg class="send svg-primary" width="50" height="50">
-                          <use xlink:href="#send"></use>
-                        </svg>
-                      </a>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </footer>
-          <div class="footer-bottom border-top py-3 mx-lg-5">
-            <div class="container-lg">
-              <div class="d-md-flex justify-content-between align-items-center">
-                <div class="">
-                  <p class="m-0">© 2024 Copyright Accesories. HTML Template by <a href="https://templatesjungle.com/" class="text-decoration-underline" target="_blank">
-                      TemplatesJungle</a>
-                  </p>
-                </div>
-                <div class=" d-flex flex-wrap">
-                  <div class="shipping me-4">
-                    <span>We ship with:</span>
-                    <img src="images/arct-icon.png" alt="icon">
-                    <img src="images/dhl-logo.png" alt="icon">
-                  </div>
-                  <div class="payment-option">
-                    <span>Payment Option:</span>
-                    <img src="images/visa-card.png" alt="card">
-                    <img src="images/paypal-card.png" alt="card">
-                    <img src="images/master-card.png" alt="card">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
+  <footer></footer>
+  
   
    <script src="js/menu.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script src="main.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="js/gsap.js"></script>
-        <script src="js/ScrollTrigger.js"></script>
+   <script src="main.js"></script>
         <script src="js/script.js"></script>
         <script src="./script.js"></script>
     </body>
